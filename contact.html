@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Contact | Ayaz Ahmed</title>
-style.css
+<link rel="stylesheet" href="style.css" id="theme">
 </head>
 
 <body>
@@ -13,6 +13,7 @@ style.css
 <header>
 <div class="logo-box">img/AAK-logo.png</div>
 <h1>Contact Me</h1>
+<button class="btn" onclick="toggleDarkMode()">Dark Mode</button>
 </header>
 
 <nav>
@@ -25,8 +26,7 @@ contact.htmlContact</a>
 </nav>
 
 <section class="fade-in">
-
-https://formsubmit.co/ahmedayaz1977@gmail.com
+<form action="https://formsubmit.co/ahmedayaz1977@gmail.com" method="POST">
 <input type="hidden" name="_captcha" value="false">
 
 <label>Name</label><br>
@@ -38,16 +38,15 @@ https://formsubmit.co/ahmedayaz1977@gmail.com
 <label>Message</label><br>
 <textarea name="message" rows="5" required></textarea><br><br>
 
-<button class="btn" type="submit">Send Message</button>
+<button class="btn">Send Message</button>
 </form>
-
 </section>
 
 <!-- WhatsApp -->
-https://wa.me/966532095550
+https://wa.me/966532095550" class="whatsapp-btn" target="_blank">
     https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg
 </a>
 
-script.js
+<script src="script.js"></script>
 </body>
 </html>
