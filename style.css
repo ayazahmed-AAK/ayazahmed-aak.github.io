@@ -1,39 +1,48 @@
 /* ---------------------------
-   EXECUTIVE NAVY + GOLD THEME
+   MAIN CLEAN STYLE (NO DARK MODE)
 ---------------------------- */
 
 body {
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background: #f4f4f4;
     color: #333;
-    transition: all 0.3s ease;
 }
 
 /* Header */
 header {
     background: #0B1A33;
-    color: #FFD700;
     text-align: center;
-    padding: 50px 20px;
-    position: relative;
+    padding: 40px 20px;
+}
+header h1 {
+    color: #FFD700;
+    margin-top: 10px;
 }
 
-header img {
-    width: 140px;
-    margin-bottom: 10px;
+/* Logo Box */
+.logo-box {
+    background: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
+.logo-box img {
+    width: 150px;
+    display: block;
+    height: auto;
 }
 
 /* Navigation */
 nav {
     background: #071225;
-    padding: 12px;
+    padding: 15px;
     text-align: center;
 }
 nav a {
     color: #FFD700;
-    margin: 0 18px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -41,87 +50,65 @@ nav a:hover {
     color: white;
 }
 
-/* Sections */
+/* Section Box */
 section {
     max-width: 900px;
     background: white;
     margin: 40px auto;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
-    animation: fadeIn 0.8s ease-in-out;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
 }
 
+/* Headings */
 h2 {
     color: #0B1A33;
     border-left: 5px solid #FFD700;
     padding-left: 10px;
 }
 
-/* Buttons */
-.btn {
-    background: #FFD700;
-    color: #0B1A33;
-    padding: 12px 28px;
-    border-radius: 30px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-.btn:hover {
-    background: white;
-    color: #0B1A33;
-}
-
 /* WhatsApp Floating Button */
 .whatsapp-btn {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 20px;
+    right: 20px;
     background: #25D366;
-    padding: 15px;
+    padding: 12px;
     border-radius: 50%;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    z-index: 99999;
 }
 .whatsapp-btn img {
-    width: 32px;
+    width: 40px !important;
+    height: 40px !important;
+    display: block;
 }
 
-/* Fade-in Scroll Animations */
+/* Watermark */
+.watermark {
+    background-image: url("img/AAK-watermark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+/* Fix Google Translate */
+.skiptranslate { display: none !important; }
+#google_translate_element {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+body { top: 0 !important; }
+
+/* Fade-in animation */
 .fade-in {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(20px);
     transition: 0.8s ease;
 }
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Achievements Watermark */
-.watermark {
-    background-image: url('img/AAK-watermark.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
-    opacity: 0.95;
-}
-
-/* Responsive Logo Scaling */
-@media (max-width: 768px) {
-    header img {
-        width: 100px;
-    }
-}
-@media (max-width: 480px) {
-    header img {
-        width: 80px;
-    }
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
 }
