@@ -70,3 +70,16 @@ body {
     top: 0px !important;
     position: static !important;
 }
+/* Logo Box (Option C) */
+.logo-box {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+    margin-bottom: 10px;
+}
+
+.logo-box img {
+    width: 160px; /* Adjust as needed */
+}
