@@ -1,12 +1,14 @@
-// Scroll Fade-In Animation
-const elements = document.querySelectorAll(".fade-in");
+/* DARK MODE TOGGLE */
+function toggleDarkMode() {
+    const theme = document.getElementById("theme");
+    theme.href = theme.href.includes("style.css") ? "dark.css" : "style.css";
+}
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-        }
+/* Fade-In Animations */
+const els = document.querySelectorAll(".fade-in");
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("visible");
     });
 });
-
-elements.forEach(el => observer.observe(el));
+els.forEach(el => obs.observe(el));
