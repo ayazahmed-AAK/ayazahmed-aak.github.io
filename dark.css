@@ -1,1 +1,46 @@
-<!-- dark.css placeholder -->
+/* ---------------------------
+   DARK MODE (EXECUTIVE NAVY + GOLD)
+---------------------------- */
+
+body {
+    background: #0A1224;
+    color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #050A17;
+}
+header h1 {
+    color: #FFD700;
+}
+
+/* Navigation */
+nav {
+    background: #030814;
+}
+nav a { color: #FFD700; }
+nav a:hover { color: #fff; }
+
+/* Sections */
+section {
+    background: #10182b;
+    color: #fff;
+}
+
+/* Headings */
+h2 {
+    color: #FFD700;
+}
+
+/* Watermark */
+.watermark {
+    background-image: url("img/AAK-watermark.png");
+    background-size: 75%;
+    opacity: 0.95;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: #25D366;
+}
