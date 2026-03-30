@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayaz Ahmed | Logistics & Supply Chain Leader</title>
     <link id="theme" rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
-    <!-- Google Analytics -->
+    <!-- Google Analytics (replace G-XXXXXXX with your ID if needed) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXX');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
     </script>
 
-    <!-- Google Translate -->
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-      }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script src="script.js"></script>
 </head>
 
 <body>
 
+<!-- Google Translate -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {pageLanguage: 'en'}, 
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <header>
-    <img src="img/AAK-logo.png" class="logo-header" alt="logo">
+    <div class="logo-box">
+        <img src="img/AAK-logo.png" alt="AAK Logo">
+    </div>
     <h1>Ayaz Ahmed</h1>
     <p>Logistics & Supply Chain Professional</p>
+
     <button onclick="toggleDarkMode()" class="btn">Toggle Dark Mode</button>
 </header>
 
@@ -47,22 +52,17 @@
 </nav>
 
 <section class="fade-in">
-    <img src="img/AAK-logo.png" class="profile-pic" alt="Ayaz Photo">
-
     <h2>About Me</h2>
-    <p>
-        I am a results-driven Logistics & Supply Chain leader with 15+ years of operational
-        excellence across UAE, KSA, and Pakistan. I specialize in high-volume logistics,
-        warehouse optimization, 3PL leadership, Lean, Kaizen, and digital transformation.
-    </p>
+    <p>I am a results-driven Logistics & Supply Chain leader with over 15 years of experience across UAE, KSA, and Pakistan.</p>
 
-    <a class="btn" href="Ayaz_Ahmed_CV.pdf" target="_blank">Download My CV</a>
+    <a class="btn" href="Ayaz_Ahmed_CV.pdf" download>Download My CV</a>
 </section>
 
 <!-- WhatsApp Floating Button -->
 <a class="whatsapp-btn" href="https://wa.me/966532095550" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
+<script src="script.js"></script>
 </body>
 </html>
