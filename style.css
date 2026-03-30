@@ -126,7 +126,7 @@ h2 {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* WhatsApp Floating Button (Corrected) */
+/* WhatsApp Floating Button */
 .whatsapp-btn {
     position: fixed;
     bottom: 25px;
@@ -139,8 +139,8 @@ h2 {
 }
 
 .whatsapp-btn img {
-    width: 40px !important;
-    height: 40px !important;
-    object-fit: contain;
+    width: 38px !important;
+    height: 38px !important;
     display: block;
+    object-fit: contain;
 }
