@@ -36,6 +36,8 @@ section {
 
 h2 {
     color: #FFD700;
+
+   
 }
 
 /* Buttons */
@@ -82,4 +84,29 @@ body {
 
 .logo-box img {
     width: 160px; /* Adjust as needed */
+}
+
+/* Fix Google Translate Layout Jump / Disappearing Menu */
+body {
+    transform: none !important;
+    margin-top: 0 !important;
+}
+
+.skiptranslate {
+    display: none !important;
+}
+
+#google_translate_element {
+    position: fixed;
+    top: 8px;
+    right: 12px;
+    z-index: 999999;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.goog-te-gadget img {
+    display: none !important;
 }
