@@ -1,6 +1,3 @@
-/* ---------------------------
-   DARK MODE TOGGLE
----------------------------- */
 function toggleDarkMode() {
     const theme = document.getElementById("theme");
     if (theme.getAttribute("href") === "style.css") {
@@ -10,11 +7,8 @@ function toggleDarkMode() {
     }
 }
 
-/* ---------------------------
-   SCROLL FADE-IN ANIMATIONS
----------------------------- */
+/* Scroll Fade-In */
 const elements = document.querySelectorAll(".fade-in");
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -22,5 +16,4 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 });
-
 elements.forEach(el => observer.observe(el));
