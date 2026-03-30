@@ -1,5 +1,5 @@
 /* ---------------------------
-   MAIN CLEAN STYLE (NO DARK MODE)
+   LIGHT MODE (EXECUTIVE THEME)
 ---------------------------- */
 
 body {
@@ -14,10 +14,10 @@ header {
     background: #0B1A33;
     text-align: center;
     padding: 40px 20px;
+    color: #FFD700;
 }
 header h1 {
-    color: #FFD700;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 /* Logo Box */
@@ -30,8 +30,8 @@ header h1 {
 }
 .logo-box img {
     width: 150px;
-    display: block;
     height: auto;
+    display: block;
 }
 
 /* Navigation */
@@ -46,18 +46,16 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-nav a:hover {
-    color: white;
-}
+nav a:hover { color: white; }
 
-/* Section Box */
+/* Content Sections */
 section {
-    max-width: 900px;
     background: white;
+    max-width: 900px;
     margin: 40px auto;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
 /* Headings */
@@ -67,7 +65,7 @@ h2 {
     padding-left: 10px;
 }
 
-/* WhatsApp Floating Button */
+/* WhatsApp Button */
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -75,16 +73,15 @@ h2 {
     background: #25D366;
     padding: 12px;
     border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    z-index: 99999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
 }
 .whatsapp-btn img {
-    width: 40px !important;
-    height: 40px !important;
-    display: block;
+    width: 40px;
+    height: 40px;
 }
 
-/* Watermark */
+/* Watermark for achievements */
 .watermark {
     background-image: url("img/AAK-watermark.png");
     background-repeat: no-repeat;
@@ -92,23 +89,23 @@ h2 {
     background-size: 70%;
 }
 
-/* Fix Google Translate */
+/* Google Translate Fix */
 .skiptranslate { display: none !important; }
+body { top: 0 !important; }
 #google_translate_element {
     position: fixed;
     top: 10px;
     right: 10px;
     z-index: 9999;
 }
-body { top: 0 !important; }
 
-/* Fade-in animation */
+/* Fade-In Animations */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: 0.8s ease;
+    transition: 0.7s ease;
 }
 .fade-in.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
 }
